@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF373AB924799873004E4E73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373AB824799873004E4E73 /* AppDelegate.swift */; };
+		FF373ABB24799873004E4E73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373ABA24799873004E4E73 /* SceneDelegate.swift */; };
+		FF373ABD24799873004E4E73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373ABC24799873004E4E73 /* ContentView.swift */; };
+		FF373ABF24799878004E4E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF373ABE24799878004E4E73 /* Assets.xcassets */; };
+		FF373AC224799878004E4E73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF373AC124799878004E4E73 /* Preview Assets.xcassets */; };
+		FF373AC524799878004E4E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF373AC324799878004E4E73 /* LaunchScreen.storyboard */; };
+		FF373AD024799878004E4E73 /* robotricksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373ACF24799878004E4E73 /* robotricksTests.swift */; };
+		FF373AD524799878004E4E73 /* robotricks WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FF373AD424799878004E4E73 /* robotricks WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF373ADB24799878004E4E73 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF373AD924799878004E4E73 /* Interface.storyboard */; };
+		FF373ADD2479987A004E4E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF373ADC2479987A004E4E73 /* Assets.xcassets */; };
+		FF373AE42479987A004E4E73 /* robotricks WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF373AE32479987A004E4E73 /* robotricks WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF373AE92479987A004E4E73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373AE82479987A004E4E73 /* ContentView.swift */; };
+		FF373AEB2479987A004E4E73 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373AEA2479987A004E4E73 /* HostingController.swift */; };
+		FF373AED2479987A004E4E73 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373AEC2479987A004E4E73 /* ExtensionDelegate.swift */; };
+		FF373AEF2479987A004E4E73 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373AEE2479987A004E4E73 /* NotificationController.swift */; };
+		FF373AF12479987A004E4E73 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373AF02479987A004E4E73 /* NotificationView.swift */; };
+		FF373AF32479987C004E4E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF373AF22479987C004E4E73 /* Assets.xcassets */; };
+		FF373AF62479987C004E4E73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF373AF52479987C004E4E73 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF373ACC24799878004E4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF373AAD24799873004E4E73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF373AB424799873004E4E73;
+			remoteInfo = robotricks;
+		};
+		FF373AD624799878004E4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF373AAD24799873004E4E73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF373AD324799878004E4E73;
+			remoteInfo = "robotricks WatchKit App";
+		};
+		FF373AE52479987A004E4E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF373AAD24799873004E4E73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF373AE22479987A004E4E73;
+			remoteInfo = "robotricks WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF373AFE2479987C004E4E73 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF373AE42479987A004E4E73 /* robotricks WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373B022479987C004E4E73 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FF373AD524799878004E4E73 /* robotricks WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF373AB524799873004E4E73 /* robotricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = robotricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF373AB824799873004E4E73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF373ABA24799873004E4E73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF373ABC24799873004E4E73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF373ABE24799878004E4E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF373AC124799878004E4E73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF373AC424799878004E4E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF373AC624799878004E4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF373ACB24799878004E4E73 /* robotricksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = robotricksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF373ACF24799878004E4E73 /* robotricksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robotricksTests.swift; sourceTree = "<group>"; };
+		FF373AD124799878004E4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF373AD424799878004E4E73 /* robotricks WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "robotricks WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF373ADA24799878004E4E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FF373ADC2479987A004E4E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF373ADE2479987A004E4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF373AE32479987A004E4E73 /* robotricks WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "robotricks WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF373AE82479987A004E4E73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF373AEA2479987A004E4E73 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		FF373AEC2479987A004E4E73 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FF373AEE2479987A004E4E73 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FF373AF02479987A004E4E73 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		FF373AF22479987C004E4E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF373AF52479987C004E4E73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF373AF72479987C004E4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF373AF82479987C004E4E73 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF373AB224799873004E4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373AC824799878004E4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373AE02479987A004E4E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF373AAC24799873004E4E73 = {
+			isa = PBXGroup;
+			children = (
+				FF373AB724799873004E4E73 /* robotricks */,
+				FF373ACE24799878004E4E73 /* robotricksTests */,
+				FF373AD824799878004E4E73 /* robotricks WatchKit App */,
+				FF373AE72479987A004E4E73 /* robotricks WatchKit Extension */,
+				FF373AB624799873004E4E73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF373AB624799873004E4E73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF373AB524799873004E4E73 /* robotricks.app */,
+				FF373ACB24799878004E4E73 /* robotricksTests.xctest */,
+				FF373AD424799878004E4E73 /* robotricks WatchKit App.app */,
+				FF373AE32479987A004E4E73 /* robotricks WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF373AB724799873004E4E73 /* robotricks */ = {
+			isa = PBXGroup;
+			children = (
+				FF373AB824799873004E4E73 /* AppDelegate.swift */,
+				FF373ABA24799873004E4E73 /* SceneDelegate.swift */,
+				FF373ABC24799873004E4E73 /* ContentView.swift */,
+				FF373ABE24799878004E4E73 /* Assets.xcassets */,
+				FF373AC324799878004E4E73 /* LaunchScreen.storyboard */,
+				FF373AC624799878004E4E73 /* Info.plist */,
+				FF373AC024799878004E4E73 /* Preview Content */,
+			);
+			path = robotricks;
+			sourceTree = "<group>";
+		};
+		FF373AC024799878004E4E73 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF373AC124799878004E4E73 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF373ACE24799878004E4E73 /* robotricksTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF373ACF24799878004E4E73 /* robotricksTests.swift */,
+				FF373AD124799878004E4E73 /* Info.plist */,
+			);
+			path = robotricksTests;
+			sourceTree = "<group>";
+		};
+		FF373AD824799878004E4E73 /* robotricks WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FF373AD924799878004E4E73 /* Interface.storyboard */,
+				FF373ADC2479987A004E4E73 /* Assets.xcassets */,
+				FF373ADE2479987A004E4E73 /* Info.plist */,
+			);
+			path = "robotricks WatchKit App";
+			sourceTree = "<group>";
+		};
+		FF373AE72479987A004E4E73 /* robotricks WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF373AE82479987A004E4E73 /* ContentView.swift */,
+				FF373AEA2479987A004E4E73 /* HostingController.swift */,
+				FF373AEC2479987A004E4E73 /* ExtensionDelegate.swift */,
+				FF373AEE2479987A004E4E73 /* NotificationController.swift */,
+				FF373AF02479987A004E4E73 /* NotificationView.swift */,
+				FF373AF22479987C004E4E73 /* Assets.xcassets */,
+				FF373AF72479987C004E4E73 /* Info.plist */,
+				FF373AF82479987C004E4E73 /* PushNotificationPayload.apns */,
+				FF373AF42479987C004E4E73 /* Preview Content */,
+			);
+			path = "robotricks WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FF373AF42479987C004E4E73 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF373AF52479987C004E4E73 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF373AB424799873004E4E73 /* robotricks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF373B032479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricks" */;
+			buildPhases = (
+				FF373AB124799873004E4E73 /* Sources */,
+				FF373AB224799873004E4E73 /* Frameworks */,
+				FF373AB324799873004E4E73 /* Resources */,
+				FF373B022479987C004E4E73 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF373AD724799878004E4E73 /* PBXTargetDependency */,
+			);
+			name = robotricks;
+			productName = robotricks;
+			productReference = FF373AB524799873004E4E73 /* robotricks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF373ACA24799878004E4E73 /* robotricksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF373B062479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricksTests" */;
+			buildPhases = (
+				FF373AC724799878004E4E73 /* Sources */,
+				FF373AC824799878004E4E73 /* Frameworks */,
+				FF373AC924799878004E4E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF373ACD24799878004E4E73 /* PBXTargetDependency */,
+			);
+			name = robotricksTests;
+			productName = robotricksTests;
+			productReference = FF373ACB24799878004E4E73 /* robotricksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF373AD324799878004E4E73 /* robotricks WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF373AFF2479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricks WatchKit App" */;
+			buildPhases = (
+				FF373AD224799878004E4E73 /* Resources */,
+				FF373AFE2479987C004E4E73 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF373AE62479987A004E4E73 /* PBXTargetDependency */,
+			);
+			name = "robotricks WatchKit App";
+			productName = "robotricks WatchKit App";
+			productReference = FF373AD424799878004E4E73 /* robotricks WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FF373AE22479987A004E4E73 /* robotricks WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF373AFB2479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricks WatchKit Extension" */;
+			buildPhases = (
+				FF373ADF2479987A004E4E73 /* Sources */,
+				FF373AE02479987A004E4E73 /* Frameworks */,
+				FF373AE12479987A004E4E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "robotricks WatchKit Extension";
+			productName = "robotricks WatchKit Extension";
+			productReference = FF373AE32479987A004E4E73 /* robotricks WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF373AAD24799873004E4E73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Jhonatan Silva de Sousa";
+				TargetAttributes = {
+					FF373AB424799873004E4E73 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FF373ACA24799878004E4E73 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FF373AB424799873004E4E73;
+					};
+					FF373AD324799878004E4E73 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FF373AE22479987A004E4E73 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = FF373AB024799873004E4E73 /* Build configuration list for PBXProject "robotricks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF373AAC24799873004E4E73;
+			productRefGroup = FF373AB624799873004E4E73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF373AB424799873004E4E73 /* robotricks */,
+				FF373ACA24799878004E4E73 /* robotricksTests */,
+				FF373AD324799878004E4E73 /* robotricks WatchKit App */,
+				FF373AE22479987A004E4E73 /* robotricks WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF373AB324799873004E4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF373AC524799878004E4E73 /* LaunchScreen.storyboard in Resources */,
+				FF373AC224799878004E4E73 /* Preview Assets.xcassets in Resources */,
+				FF373ABF24799878004E4E73 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373AC924799878004E4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373AD224799878004E4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF373ADD2479987A004E4E73 /* Assets.xcassets in Resources */,
+				FF373ADB24799878004E4E73 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373AE12479987A004E4E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF373AF62479987C004E4E73 /* Preview Assets.xcassets in Resources */,
+				FF373AF32479987C004E4E73 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF373AB124799873004E4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF373AB924799873004E4E73 /* AppDelegate.swift in Sources */,
+				FF373ABB24799873004E4E73 /* SceneDelegate.swift in Sources */,
+				FF373ABD24799873004E4E73 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373AC724799878004E4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF373AD024799878004E4E73 /* robotricksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF373ADF2479987A004E4E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF373AEB2479987A004E4E73 /* HostingController.swift in Sources */,
+				FF373AE92479987A004E4E73 /* ContentView.swift in Sources */,
+				FF373AEF2479987A004E4E73 /* NotificationController.swift in Sources */,
+				FF373AED2479987A004E4E73 /* ExtensionDelegate.swift in Sources */,
+				FF373AF12479987A004E4E73 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF373ACD24799878004E4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF373AB424799873004E4E73 /* robotricks */;
+			targetProxy = FF373ACC24799878004E4E73 /* PBXContainerItemProxy */;
+		};
+		FF373AD724799878004E4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF373AD324799878004E4E73 /* robotricks WatchKit App */;
+			targetProxy = FF373AD624799878004E4E73 /* PBXContainerItemProxy */;
+		};
+		FF373AE62479987A004E4E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF373AE22479987A004E4E73 /* robotricks WatchKit Extension */;
+			targetProxy = FF373AE52479987A004E4E73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF373AC324799878004E4E73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF373AC424799878004E4E73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FF373AD924799878004E4E73 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF373ADA24799878004E4E73 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF373AF92479987C004E4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF373AFA2479987C004E4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF373AFC2479987C004E4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"robotricks WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "robotricks WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricks.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		FF373AFD2479987C004E4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"robotricks WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "robotricks WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricks.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		FF373B002479987C004E4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				IBSC_MODULE = robotricks_WatchKit_Extension;
+				INFOPLIST_FILE = "robotricks WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricks.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		FF373B012479987C004E4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				IBSC_MODULE = robotricks_WatchKit_Extension;
+				INFOPLIST_FILE = "robotricks WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricks.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		FF373B042479987C004E4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"robotricks/Preview Content\"";
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = robotricks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF373B052479987C004E4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"robotricks/Preview Content\"";
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = robotricks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF373B072479987C004E4E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				INFOPLIST_FILE = robotricksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/robotricks.app/robotricks";
+			};
+			name = Debug;
+		};
+		FF373B082479987C004E4E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 936KKYDA65;
+				INFOPLIST_FILE = robotricksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatansouza.robotricksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/robotricks.app/robotricks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF373AB024799873004E4E73 /* Build configuration list for PBXProject "robotricks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF373AF92479987C004E4E73 /* Debug */,
+				FF373AFA2479987C004E4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF373AFB2479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricks WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF373AFC2479987C004E4E73 /* Debug */,
+				FF373AFD2479987C004E4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF373AFF2479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricks WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF373B002479987C004E4E73 /* Debug */,
+				FF373B012479987C004E4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF373B032479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF373B042479987C004E4E73 /* Debug */,
+				FF373B052479987C004E4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF373B062479987C004E4E73 /* Build configuration list for PBXNativeTarget "robotricksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF373B072479987C004E4E73 /* Debug */,
+				FF373B082479987C004E4E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF373AAD24799873004E4E73 /* Project object */;
+}

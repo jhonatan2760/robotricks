@@ -9,9 +9,16 @@
 import WatchKit
 import Foundation
 import SwiftUI
+import CoreMotion
 
 class HostingController: WKHostingController<ContentView> {
+    
+    @IBOutlet weak var labelX: WKInterfaceLabel!
+    let motionManager = CMMotionManager()
+
     override var body: ContentView {
         return ContentView()
     }
+  
+    
 }

@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14815" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14770"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14621"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
         <!--Hosting Controller-->
         <scene sceneID="RUd-og-cv4">
             <objects>
-                <hostingController id="NBu-mt-KyX" customClass="HostingController" 
-                customModuleProvider="target"/>                
+                <hostingController id="NBu-mt-KyX" customClass="HostingController" customModule="robotricks_WatchKit_Extension">
+                    <connections>
+                        <segue destination="pwY-8D-Saq" kind="relationship" relationship="nextPage" id="Ne5-Bw-IBq"/>
+                    </connections>
+                </hostingController>
             </objects>
-            <point key="canvasLocation" x="187" y="141"/>
+            <point key="canvasLocation" x="224" y="141"/>
+        </scene>
+        <!--Ac Control-->
+        <scene sceneID="xOD-0e-nRD">
+            <objects>
+                <controller id="pwY-8D-Saq" customClass="AcControl" customModule="robotricks_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" accessibilityLabel="labelX" accessibilityIdentifier="labelX" accessibilityValue="labelX" text="--" id="WgX-S9-WVc" userLabel="labelX"/>
+                        <slider width="1" alignment="left" value="1" maximum="180" steps="10" id="ZKe-v7-mfa">
+                            <connections>
+                                <action selector="chang:" destination="pwY-8D-Saq" id="Ov9-PX-Wsv"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="labelX" destination="WgX-S9-WVc" id="ew5-Cl-rZL"/>
+                        <outlet property="move" destination="ZKe-v7-mfa" id="AMw-6y-rMj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="526" y="141"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -30,11 +53,10 @@
             </objects>
             <point key="canvasLocation" x="187" y="462"/>
         </scene>
-        <!--Notification Hosting Controller-->
+        <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController"
-                customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="robotricks_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="488" y="462"/>
         </scene>

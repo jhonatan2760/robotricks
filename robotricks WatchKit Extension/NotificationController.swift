@@ -9,16 +9,23 @@
 import WatchKit
 import SwiftUI
 import UserNotifications
+import Foundation
+import CoreMotion
 
 class NotificationController: WKUserNotificationHostingController<NotificationView> {
-
+    
+    let motionManager = CMMotionManager()
+    
     override var body: NotificationView {
         return NotificationView()
+        motionManager.accelerometerUpdateInterval = 0.1
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        
     }
 
     override func didDeactivate() {

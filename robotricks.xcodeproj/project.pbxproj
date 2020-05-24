@@ -25,6 +25,7 @@
 		FF373AF12479987A004E4E73 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373AF02479987A004E4E73 /* NotificationView.swift */; };
 		FF373AF32479987C004E4E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF373AF22479987C004E4E73 /* Assets.xcassets */; };
 		FF373AF62479987C004E4E73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF373AF52479987C004E4E73 /* Preview Assets.xcassets */; };
+		FF373B0A24799C44004E4E73 /* AcControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF373B0924799C44004E4E73 /* AcControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		FF373AF52479987C004E4E73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF373AF72479987C004E4E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF373AF82479987C004E4E73 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FF373B0924799C44004E4E73 /* AcControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 		FF373AE72479987A004E4E73 /* robotricks WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FF373B0924799C44004E4E73 /* AcControl.swift */,
 				FF373AE82479987A004E4E73 /* ContentView.swift */,
 				FF373AEA2479987A004E4E73 /* HostingController.swift */,
 				FF373AEC2479987A004E4E73 /* ExtensionDelegate.swift */,
@@ -402,6 +405,7 @@
 				FF373AEF2479987A004E4E73 /* NotificationController.swift in Sources */,
 				FF373AED2479987A004E4E73 /* ExtensionDelegate.swift in Sources */,
 				FF373AF12479987A004E4E73 /* NotificationView.swift in Sources */,
+				FF373B0A24799C44004E4E73 /* AcControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,31 +42,24 @@ class AcControl: WKInterfaceController {
         //motionManager.accelerometerUpdateInterval = 2.0
         if (motionManager.isAccelerometerAvailable == true) { //o erro estavan no error?
                    let handler:CMAccelerometerHandler = {(data: CMAccelerometerData?, error: Error?) -> Void in
-                        self.labelX.setText(String(format: "%.1f", data!.acceleration.x))
-                  
-                    self.label_y.setText(String(format: "%.1f", data!.acceleration.y))
                     
-                    self.label_z.setText(String(format: "%.1f", data!.acceleration.z))
-                    
-                    let cont = Int(data!.acceleration.x * 100)
-                    
-                    //if(cont == 5 || cont == -5){
-                       print(cont)
-                        //self.send(x: cont)
-                    //}
-                    
-                    if(cont > 0){
+                    let contX = self.convertAxy(axy: data!.acceleration.x)
+                    let contY = self.convertAxy(axy: data!.acceleration.y)
+                    let contZ = self.convertAxy(axy: data!.acceleration.z)
+                 
+                    if(contZ > 0){
                         self.btn.setBackgroundColor(UIColor.red)
                     }else{
                         self.btn.setBackgroundColor(UIColor.green)
                     }
-                    //self.send(x: cont)
-                    self.labelX.setText(String(cont))
+                   
+                    self.labelX.setText(String("X: \(contX)"))
+                    self.label_y.setText(String("Y: \(contY)"))
+                    self.label_z.setText(String("Z \(contZ)"))
                     //self.send(x: cont)
                    }
             motionManager.startAccelerometerUpdates(to: OperationQueue.current!, withHandler: handler)
         }
-        //move.setColor(UIColor.orange)
     
     }
   
@@ -75,10 +68,13 @@ class AcControl: WKInterfaceController {
         motionManager.stopDeviceMotionUpdates()
     }
     
+    func convertAxy(axy:Double) -> Int {
+        return Int(axy * 100)
+    }
     
-    func send(x:Int){
+    func send(x:Int, y:Int,z:Int){
         var task: URLSessionDataTask?
-        let url = URL(string:"http://192.168.15.17:1880/api?x=\(x)")!
+        let url = URL(string:"http://192.168.15.17:1880/api?x=\(x)&y=\(y)&z=\(z)")!
         let session = URLSession(configuration: URLSessionConfiguration.default)
         
         task = session.dataTask(with: url){ (data, res, error) -> Void in
@@ -86,7 +82,7 @@ class AcControl: WKInterfaceController {
                 print("dataTaskWithURL fail: \(e.localizedDescription)")
                 return
             }
-            if let d = data {}
+            //if let d = data {}
         }
         task!.resume()
     }
